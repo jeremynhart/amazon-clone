@@ -1,0 +1,12 @@
+.main {
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main_image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
