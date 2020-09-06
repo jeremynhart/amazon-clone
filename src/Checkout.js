@@ -2,6 +2,8 @@ import React from 'react'
 import { useStateValue } from './StateProvider'
 import "./Checkout.css"
 import CheckoutProduct from './CheckoutProduct'
+import Subtotal from './Subtotal'
+
 
 function Checkout() {
 const [{ basket }] = useStateValue();
@@ -15,7 +17,7 @@ const [{ basket }] = useStateValue();
             />
             {basket?.length === 0 ? (
                 <div>
-                    <h2>Your Shopping Cart is empty</h2>
+                    <h2 className="checkout_title_empty">Your Shopping Cart is empty</h2>
                 </div>
             ) : (
                 <div>
@@ -32,6 +34,12 @@ const [{ basket }] = useStateValue();
                 </div>
             )}
         </div>
+        {basket.length > 0 && (
+            <div className="checkout_right">           
+            <Subtotal />
+            </div>
+        )}
+
     </div>
     ); 
 }
