@@ -11,12 +11,14 @@
 
 .header_search {
     display: flex;
+    max-width: 1400px;
     flex: 1;
 }
 
 .header_nav {
     display: flex;
     justify-content: space-evenly;
+    width: 300px;
 
 }
 
@@ -43,8 +45,8 @@
 
 .header_logo {
     width: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 18px;
     object-fit: contain;
 }

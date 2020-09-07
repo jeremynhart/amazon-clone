@@ -14,8 +14,8 @@
 }
 
 .product__info {
-    height: 100px;
-    margin-bottom: 15px;
+    height: 85px;
+    margin-bottom: 0px;
 }
 
 .product__price {
@@ -36,4 +36,6 @@
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734 #9c7e31 #846a29;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
